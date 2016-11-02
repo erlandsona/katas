@@ -24,3 +24,7 @@ cabal.sandbox.config
 .stack-work/
 cabal.project.local
 .HTF/
+
+
+# Sass generated files
+.sass-cache/

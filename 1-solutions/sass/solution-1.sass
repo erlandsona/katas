@@ -1,0 +1,8 @@
+$sum: 0
+@function summedMultiples ($den1, $den2, $start, $end)
+  @for $i from $start through $end
+    @if $i % $den1 == 0 or $i % $den2 == 0
+      $sum: $sum + $i !global
+  @return $sum
+
+@debug summedMultiples(3, 5, 0, 999)
